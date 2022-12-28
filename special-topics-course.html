@@ -23,7 +23,7 @@
 
   <body>
     <header>
-      <!-- add navbar. Ln: [] -->
+      <!-- add navbar. Ln: [27, 45] -->
       <nav
         class="navbar navbar-dark bg-dark fixed-top p-2"
         id="navbar"
@@ -31,7 +31,7 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">RESL@NPTU</a>
-          <!-- offcanvas的選單按鈕. Ln: [] -->
+          <!-- offcanvas的選單按鈕. Ln: [35, 43] -->
           <button
             class="navbar-toggler"
             type="button"
@@ -43,7 +43,7 @@
           </button>
         </div>
       </nav>
-      <!-- 對應到navbar上的選單按鈕的offcanvas清單. Ln: [] -->
+      <!-- 對應到navbar上的選單按鈕的offcanvas清單. Ln: [47, 160] -->
       <div
         class="offcanvas offcanvas-end text-bg-dark"
         tabindex="-1"
@@ -160,23 +160,70 @@
       </div>
     </header>
     <main>
-      <!-- main section. Ln: [] -->
+      <!-- main section. Ln: [164, 212] -->
       <section class="page-section pb-5 container">
-        <!-- 標題. Ln: [] -->
-        <div class="text-center py-5">
-          <h1 class="fw-normal">Special Topics Course / 專題課程</h1>
+        <!-- breadcrumb. Ln:[166, 179] -->
+        <div
+          class="my-3 p-2 bg-secondary d-flex align-items-center rounded-4"
+          style="--bs-bg-opacity: 0.2"
+        >
+          目前位置：
+          <nav aria-label="breadcrumb" class="d-inline-block">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                專題課程
+              </li>
+            </ol>
+          </nav>
         </div>
-        <!-- 內容. Ln: [] -->
+        <!-- 標題. Ln: [181, 186] -->
+        <div class="text-center py-3">
+          <h1 class="fw-normal">Special Topics Course / 專題課程</h1>
+          <h3 class="fw-normal">
+            專題生的自我修練 - 要加入RESL應有的認知與體認
+          </h3>
+        </div>
+        <!-- 內容. Ln: [188, 216] -->
+        <div class="lh-base fs-5">
+          想要加入RESL＠NPTU實驗室的學生，應該先瞭解以下幾件事：
+          <ul class="my-2">
+            <li>
+              沒有人天生註定要當魯蛇，但是成功絕不屬於懶散的人！那些天份比你好、比你強的人，沒理由要為了你做一隻驕傲的兔子，慢慢等你追過他；相反地，我認識許多優秀的人，他們真得非常努力、有夠努力！如果你想要成功，你必須認清一件事：你必須付出比別人多、而且還要多很多才行！
+            </li>
+            <li>
+              沒有人不喜歡玩樂，但是你必須有自制力！願意為追求專業成長，付出比別人更多的心力！只要夠努力，成功是有機會的！如果你還是需要玩樂，OK，請記住「Play
+              hard, work
+              harder!」如果你做得到，那麼我沒意見！如果你整天都在玩樂，那麼請你不要加入我們！我們實驗室的學生，常常有做不完的工作、熬不完的夜～
+            </li>
+            <li>
+              如果你不喜歡配合實驗室的時間，時常遲到、失聯，請不要考慮加入RESL@NPTU實驗室!我們沒有這麼多時間去到處找你！
+            </li>
+            <li>
+              如果你喜歡老師、學長、同學配合你，謝謝，請千萬不要考慮加入RESL@NPTU!
+              我們無法配合你！
+            </li>
+            <li>
+              如果你想要得過且過地混過專題，拜託，請萬萬不要考慮加入RESL@NPTU!
+            </li>
+          </ul>
+          如果看完了上述幾點，你還是想要加入我們，那麼歡迎你和<a
+            href="https://junwu.nptu.edu.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >指導教授</a
+          >聯繫，我們可以好好地聊一聊～
+        </div>
       </section>
     </main>
     <footer id="footer" class="text-bg-dark py-3">
       <div class="container">
         <div class="row">
+          <!-- resl@nptu copyright. Ln: [224, 232] -->
           <div class="col-lg-3 col-md-6 mb-3">
-            <!-- resl@nptu copyright. Ln: [] -->
             <div
               class="d-flex flex-column justify-content-between"
-              style="min-height: 25vh"
+              style="min-height: 175px"
             >
               <div class="fs-5">RESL@NPTU</div>
               <div style="font-size: 0.875em">
@@ -184,11 +231,11 @@
               </div>
             </div>
           </div>
-          <!-- 實驗室的指導教授. Ln: [] -->
+          <!-- 實驗室的指導教授. Ln: [236, 249] -->
           <div class="col-lg-3 col-md-6 mb-3">
             <div
               class="d-flex flex-column justify-content-between"
-              style="min-height: 25vh"
+              style="min-height: 175px"
             >
               <div class="fs-5">指導教授</div>
               <div class="fs-6">吳卓俊 ( Jun Wu )</div>
@@ -201,11 +248,11 @@
               <div class="fs-6">(08)7663800 ext. 31659</div>
             </div>
           </div>
-          <!-- 實驗室的聯絡資訊. Ln: [] -->
+          <!-- 實驗室的聯絡資訊. Ln: [253, 268] -->
           <div class="col-lg-3 col-md-6 mb-3">
             <div
               class="d-flex flex-column justify-content-between"
-              style="min-height: 25vh"
+              style="min-height: 175px"
             >
               <div class="fs-5">聯絡資訊</div>
               <div class="fs-6 text-start">
@@ -220,11 +267,11 @@
               <div class="fs-6">(08)7663800 ext. 31659</div>
             </div>
           </div>
-          <!-- 此網頁的設計者. Ln:[] -->
+          <!-- 此網頁的設計者. Ln:[272, 279] -->
           <div class="col-lg-3 col-md-6 mb-3">
             <div
               class="d-flex flex-column justify-content-between"
-              style="min-height: 25vh"
+              style="min-height: 175px"
             >
               <div class="fs-4">設計</div>
               <div class="fs-5">資工四甲 CBB108015</div>
@@ -234,7 +281,7 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap JavaScript Libraries. Ln: [] -->
+    <!-- Bootstrap JavaScript Libraries. Ln: [285, 295] -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
