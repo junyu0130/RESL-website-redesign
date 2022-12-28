@@ -1,14 +1,18 @@
+/* 引入google font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
 
+/* 設定全域font-family */
 html,
 body {
   font-family: "Open Sans", var(--bs-body-font-family), sans-serif;
 }
 
+/* 設定section的高度 */
 .page-section {
   min-height: calc(100vh - 72px);
 }
 
+/* offcanvas 選單內容動畫 */
 .offcanvas-body .nav-link {
   padding-right: 0em;
   transition: 150ms;
