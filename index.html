@@ -26,7 +26,7 @@
   <!-- 為navbar加上scrollspy. Ln: 27 -->
   <body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
-      <!-- add navbar. Ln: [28, 57] -->
+      <!-- add navbar. Ln: [30, 34] -->
       <nav
         class="navbar navbar-dark bg-dark fixed-top p-2"
         id="navbar"
@@ -34,7 +34,7 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">RESL@NPTU</a>
-          <!-- 當vw <= md時隱藏. Ln: 32 -->
+          <!-- 當vw <= md時隱藏. Ln: 38 -->
           <ul class="navbar-nav ms-auto d-none d-md-flex me-3 flex-row">
             <li class="nav-item m-2">
               <a class="nav-link active" href="#home">首頁</a>
@@ -49,7 +49,7 @@
               <a class="nav-link" href="#rt">研究議題</a>
             </li>
           </ul>
-          <!-- offcanvas的選單按鈕. Ln: [47, 55] -->
+          <!-- offcanvas的選單按鈕. Ln: [53, 61] -->
           <button
             class="navbar-toggler"
             type="button"
@@ -61,7 +61,7 @@
           </button>
         </div>
       </nav>
-      <!-- 對應到navbar上的選單按鈕的offcanvas清單. Ln: [59, 172] -->
+      <!-- 對應到navbar上的選單按鈕的offcanvas清單. Ln: [65, 178] -->
       <div
         class="offcanvas offcanvas-end text-bg-dark"
         tabindex="-1"
@@ -178,7 +178,7 @@
       </div>
     </header>
     <main>
-      <!-- home section. Ln: [176, 231] -->
+      <!-- home section. Ln: [182, 248] -->
       <section
         id="home"
         class="d-flex min-vh-100 flex-column justify-content-center align-items-center position-relative"
@@ -189,14 +189,14 @@
           gap: 15px;
         "
       >
-        <!-- resl logo (image). Ln: 187 -->
+        <!-- resl logo (image). Ln: [193, 198] -->
         <img
           src="image/resl_logo.png"
           alt="resl logo"
           style="width: 250px"
           data-aos="fade-up"
         />
-        <!-- resl chinese name (image), vw <= md 時隱藏. Ln: [189, 194] -->
+        <!-- resl chinese name (image), vw <= md 時隱藏. Ln: [200, 207] -->
         <img
           src="image/resl_ch_name.png"
           alt="resl logo"
@@ -205,7 +205,7 @@
           data-aos="fade-up"
           data-aos-delay="600"
         />
-        <!-- resl english name. Ln: [196, 204] -->
+        <!-- resl english name. Ln: [209, 219] -->
         <p
           class="fs-2 fw-bold text-center text-light"
           style="
@@ -217,7 +217,7 @@
         >
           Real-Time & Embedded Systems Laboratory, National Pingtung University
         </p>
-        <!-- 前往about section的按鈕. Ln: [206, 213] -->
+        <!-- 前往about section的按鈕. Ln: [221, 230] -->
         <a
           href="#about"
           type="button"
@@ -228,7 +228,7 @@
         >
           About RESL / 關於實驗室
         </a>
-        <!-- photo authorization statement. Ln: [215, 230] -->
+        <!-- photo authorization statement. Ln: [232, 247] -->
         <span
           class="d-inline fs-6 fw-light position-absolute bottom-0 start-0 text-muted m-2"
         >
@@ -246,9 +246,9 @@
           >
         </span>
       </section>
-      <!-- about section. Ln: [233, 265] -->
+      <!-- about section. Ln: [250, 283] -->
       <section id="about" class="page-section pb-5 container">
-        <!-- 標題. Ln: [235, 240] -->
+        <!-- 標題. Ln: [252, 257] -->
         <div class="text-center py-5" data-aos="fade-down" data-aos-delay="300">
           <h1 class="fw-normal">About RESL / 關於實驗室</h1>
           <h3 class="fw-normal">
@@ -256,7 +256,7 @@
           </h3>
         </div>
         <div class="row">
-          <!-- 實驗室示意圖. Ln: [244, 248] -->
+          <!-- 實驗室示意圖. Ln: [260, 266] -->
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="450">
             <img
               src="image/lab_diagram.jpeg"
@@ -264,9 +264,9 @@
               class="img-fluid mb-3"
             />
           </div>
-          <!-- 實驗室簡介. Ln: [252, 263] -->
-          <!-- 快速移動到footer的連結. Ln: [258, 262] -->
-          <div class="col-lg-6" data-aos="flip-right" data-aos-delay="750">
+          <!-- 實驗室簡介. Ln: [269, 281] -->
+          <!-- 快速移動到footer的連結. Ln: [275, 279] -->
+          <div class="col-lg-6" data-aos="flip-right" data-aos-delay="550">
             <p class="lh-base fs-5">
               本實驗室成立於2007年5月，以「即時系統(Real-Time
               Systems)」相關之技術與學理為基礎，針對廣受注目的「嵌入式系統(Embedded
@@ -281,18 +281,18 @@
           </div>
         </div>
       </section>
-      <!-- ancmt section. Ln: [268, 327] -->
+      <!-- ancmt section. Ln: [285, 345] -->
       <section id="ancmt" class="page-section pb-5 text-bg-dark">
         <div class="container">
-          <!-- 標題. Ln: [271, 273] -->
+          <!-- 標題. Ln: [288, 290] -->
           <div class="text-center py-5">
             <h1 class="fw-normal">Announcement / 最新消息</h1>
           </div>
-          <!-- 消息列表(list group). Ln: [275, 325] -->
+          <!-- 消息列表(list group). Ln: [292, 343] -->
           <div class="list-group list-group-flush">
             <!-- 修改list group item的顏色使其與背景一致 -->
             <!-- 修改list group item的border bottom使其顯示出來 -->
-            <!-- Ln: 282 -->
+            <!-- Ln: 299 -->
             <a
               href="https://resl.csie.nptu.edu.tw/joomla3/index.php/announcement/52-111"
               target="_blank"
@@ -332,7 +332,7 @@
             >
               恭賀!!實驗室馬晨翔、宋世英、賴慈馮同學於2019年屏東大學資訊學院專題競賽多媒體與數位創新組榮獲第二名
             </a>
-            <!-- 前往原始網站的公告頁面. Ln: [319, 325] -->
+            <!-- 前往原始網站的公告頁面. Ln: [336, 342] -->
             <a
               href="https://resl.csie.nptu.edu.tw/joomla3/index.php/announcement"
               target="_blank"
@@ -343,22 +343,22 @@
           </div>
         </div>
       </section>
-      <!-- rt section. Ln: [330, 445] -->
+      <!-- rt section. Ln: [347, 462] -->
       <section id="rt" class="page-section pb-5 container">
-        <!-- 標題. Ln: [332, 337] -->
+        <!-- 標題. Ln: [349, 354] -->
         <div class="text-center py-5">
           <h1 class="fw-normal">Research Topics / 研究議題</h1>
           <h5 class="fw-normal">
             我們主要進行以下主題的研究工作，點選以下連結以查看更多資訊
           </h5>
         </div>
-        <!-- 研究議題(cards). Ln: [339, 444] -->
+        <!-- 研究議題(cards). Ln: [356, 461] -->
         <div class="row row-cols-1 row-cols-md-2 g-3">
           <div class="col">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-header fs-4">即時節能排程與同步方法</div>
               <div class="card-body">
-                <!-- 當card-text的內容超過3行時截斷. Ln: [347, 352] -->
+                <!-- 當card-text的內容超過3行時截斷. Ln: [364, 369] -->
                 <p
                   class="card-text"
                   style="
@@ -381,7 +381,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-header fs-4">嵌入式系統軟體開發與設計</div>
               <div class="card-body">
                 <p
@@ -407,7 +407,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-header fs-4">雲端虛擬化平台之高效能資源管理</div>
               <div class="card-body">
                 <p
@@ -433,7 +433,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-header fs-4">高效能資料庫技術</div>
               <div class="card-body">
                 <p
@@ -464,8 +464,8 @@
     <footer id="footer" class="text-bg-dark py-3">
       <div class="container">
         <div class="row">
+          <!-- resl@nptu copyright. Ln: [469, 477] -->
           <div class="col-lg-3 col-md-6 mb-3">
-            <!-- resl@nptu copyright. Ln: [452, 460] -->
             <div
               class="d-flex flex-column justify-content-between"
               style="min-height: 175px"
@@ -476,7 +476,7 @@
               </div>
             </div>
           </div>
-          <!-- 實驗室的指導教授. Ln: [463, 478] -->
+          <!-- 實驗室的指導教授. Ln: [481, 494] -->
           <div class="col-lg-3 col-md-6 mb-3">
             <div
               class="d-flex flex-column justify-content-between"
@@ -493,7 +493,7 @@
               <div class="fs-6">(08)7663800 ext. 31659</div>
             </div>
           </div>
-          <!-- 實驗室的聯絡資訊. Ln: [480, 497] -->
+          <!-- 實驗室的聯絡資訊. Ln: [498, 513] -->
           <div class="col-lg-3 col-md-6 mb-3">
             <div
               class="d-flex flex-column justify-content-between"
@@ -512,7 +512,7 @@
               <div class="fs-6">(08)7663800 ext. 31659</div>
             </div>
           </div>
-          <!-- 此網頁的設計者. Ln:[499, 508] -->
+          <!-- 此網頁的設計者. Ln:[517, 524] -->
           <div class="col-lg-3 col-md-6 mb-3">
             <div
               class="d-flex flex-column justify-content-between"
@@ -526,7 +526,7 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap JavaScript Libraries. Ln: [513, 523] -->
+    <!-- Bootstrap JavaScript Libraries. Ln: [530, 540] -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -538,7 +538,7 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <!-- AOS JavaScript Library. Ln: [532] -->
+    <!-- AOS JavaScript Library. Ln: [542, 545] -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 1000 });
