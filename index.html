@@ -40,7 +40,7 @@
               <a class="nav-link" href="#ancmt">最新消息</a>
             </li>
             <li class="nav-item m-2">
-              <a class="nav-link" href="#">研究議題</a>
+              <a class="nav-link" href="#rt">研究議題</a>
             </li>
           </ul>
           <button
@@ -241,15 +241,15 @@
         </div>
         <div class="row">
           <!-- 實驗室示意圖 -->
-          <div class="col-6">
+          <div class="col-lg-6">
             <img
               src="image/lab_diagram.jpeg"
               alt="lab diagram"
-              class="img-fluid"
+              class="img-fluid mb-3"
             />
           </div>
           <!-- 實驗室簡介 -->
-          <div class="col-6">
+          <div class="col-lg-6">
             <p class="lh-base fs-5">
               本實驗室成立於2007年5月，以「即時系統(Real-Time
               Systems)」相關之技術與學理為基礎，針對廣受注目的「嵌入式系統(Embedded
@@ -318,6 +318,123 @@
             >
               Read more ...
             </a>
+          </div>
+        </div>
+      </section>
+      <!-- rt section -->
+      <section id="rt" class="page-section pb-5 container">
+        <!-- 標題 -->
+        <div class="text-center py-5">
+          <h1 class="fw-normal">Research Topics / 研究議題</h1>
+          <h5 class="fw-normal">
+            我們主要進行以下主題的研究工作，點選以下連結以查看更多資訊
+          </h5>
+        </div>
+        <!-- 研究議題(cards) -->
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-header fs-4">即時節能排程與同步方法</div>
+              <div class="card-body">
+                <!-- 當card-text的內容超過3行時截斷 -->
+                <p
+                  class="card-text"
+                  style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  "
+                >
+                  此議題相關的研究，在近年來受到相當廣泛的重視。然而僅有少數研究考慮因使用共享資源所引起的同步問題。為了確保即時工作可以滿足其嚴格的時間限制，通常一個設計良好的節能排程方法，會以工作的可排程性分析為基礎，計算出儘可能低的處理器速度來執行工作，以獲取較佳的系統耗能表現。然而，當工作的同步問題必須加以考慮時，處理器速度的計算就必須納入工作因使用共享資源時所可能發生的阻擋時間，因此通常必須使用較高的處理器速度來執行工作，因此產生了較多的系統耗能。
+                </p>
+                <a
+                  href="https://resl.csie.nptu.edu.tw/joomla3/index.php/research-topics/13-2016-02-22-06-08-31"
+                  target="_blank"
+                  class="btn btn-danger"
+                >
+                  Read more ...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header fs-4">嵌入式系統軟體開發與設計</div>
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  "
+                >
+                  嵌入式系統已逐漸取代傳統的桌上型系統，成為當前最為重要的作業環境。本實驗室針對嵌入式系統，包含Arduino、Raspberry
+                  Pi、Android以及iOS等平台，持續進行相關應用的軟體開發與設計，歡迎對開發嵌入式軟體有興趣的學生加入我們的行列。
+                </p>
+                <a
+                  href="https://resl.csie.nptu.edu.tw/joomla3/index.php/research-topics/15-2016-02-22-10-11-28"
+                  target="_blank"
+                  class="btn btn-danger"
+                >
+                  Read more ...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header fs-4">雲端虛擬化平台之高效能資源管理</div>
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  "
+                >
+                  雲端虛擬化平台及其相關應用，是未來物聯網與智能生活不可或缺的關鍵技術。本實驗室針對Xen
+                  Project的虛擬化平台，進行有關處理器排程與動態記憶體管理等學理探討，並著手進行一系列相關實作，歡迎對開發嵌入式軟體有興趣的學生加入我們的行列。
+                </p>
+                <a
+                  href="https://resl.csie.nptu.edu.tw/joomla3/index.php/research-topics/14-2016-02-22-10-06-29"
+                  target="_blank"
+                  class="btn btn-danger"
+                >
+                  Read more ...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header fs-4">高效能資料庫技術</div>
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  "
+                >
+                  高效能的資庫系統存取技術一直是學界與產業界十分重視的研究議題，針對物聯網(Internet
+                  of Things, IoT)或是XML資料庫系統等新穎的資料庫相關應用。
+                </p>
+                <a
+                  href="https://resl.csie.nptu.edu.tw/joomla3/index.php/research-topics/16-2016-02-22-11-29-16"
+                  target="_blank"
+                  class="btn btn-danger"
+                >
+                  Read more ...
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
