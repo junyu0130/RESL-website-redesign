@@ -5,6 +5,10 @@ body {
   font-family: "Open Sans", var(--bs-body-font-family), sans-serif;
 }
 
+.page-section {
+  min-height: calc(100vh - 72px);
+}
+
 .offcanvas-body .nav-link {
   padding-right: 0em;
   transition: 150ms;

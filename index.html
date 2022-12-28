@@ -21,14 +21,17 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
-      <nav class="navbar navbar-dark bg-dark fixed-top p-2">
+      <nav class="navbar navbar-dark bg-dark fixed-top p-2" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">RESL@NPTU</a>
+          <a class="navbar-brand" href="index.html">RESL@NPTU</a>
           <ul class="navbar-nav ms-auto d-none d-md-flex me-3 flex-row">
             <li class="nav-item m-2">
-              <a class="nav-link active" href="#">關於實驗室</a>
+              <a class="nav-link active" href="#home">首頁</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#about">關於實驗室</a>
             </li>
             <li class="nav-item m-2">
               <a class="nav-link" href="#">最新消息</a>
@@ -216,6 +219,32 @@
             Unsplash
           </a>
         </span>
+      </section>
+      <section id="about" class="page-section py-5 container">
+        <div class="text-center pb-5">
+          <h1 class="fw-normal">About RESL / 關於實驗室</h1>
+          <h3 class="fw-normal">
+            歡迎來到 國立屏東大學「即時與嵌入式系統實驗室」!
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="image/lab_diagram.jpeg"
+              alt="lab diagram"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6">
+            <p class="lh-base fs-5">
+              本實驗室成立於2007年5月，以「即時系統(Real-Time
+              Systems)」相關之技術與學理為基礎，針對廣受注目的「嵌入式系統(Embedded
+              Systems)」、「資料庫系統(Database
+              Systems)」以及可應用在雲端運算之「虛擬化技術(Virtualization
+              Technologies)」等進行實務型系統設計、實作與理論研究。歡迎有興趣之學生(含大學部專題生與研究生)，加入我們的行列！對於有志從事相關研究主題的本系學生，特別鼓勵申請「五年一貫」，提早從大二或大三開始進行研究工作之準備，未來加入本系碩士班後可以一年的時間取得碩士學位。有興趣的學生，不論你是本校或外校的學生，也不論你是本系或外系的學生，歡迎你和實驗室指導教授約時間面談（聯絡資訊請見本頁下方）。
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
