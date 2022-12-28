@@ -4,3 +4,12 @@ html,
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.offcanvas-body .nav-link {
+  padding-right: 0em;
+  transition: 150ms;
+}
+.offcanvas-body .nav-link:hover {
+  padding-right: 1em;
+  transition: 150ms;
+}

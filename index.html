@@ -8,7 +8,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <!-- Website icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -18,13 +19,134 @@
     />
     <!-- Personalized CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Website icon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
     <header>
-      <!-- place navbar here -->
+      <nav class="navbar navbar-dark bg-dark fixed-top p-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RESL@NPTU</a>
+          <ul class="navbar-nav ms-auto d-none d-md-flex me-3 flex-row">
+            <li class="nav-item m-2">
+              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#">關於實驗室</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#">最新消息</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#">研究議題</a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div
+        class="offcanvas offcanvas-end text-bg-dark"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul
+            class="navbar-nav justify-content-end align-items-end flex-grow-1 pe-3"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">成員</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">實驗室設備</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">專題課</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">新構想提案</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">科技部大專學生研究計畫</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                外部連結
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                aria-labelledby="dropdownId"
+              >
+                <a
+                  class="dropdown-item text-end"
+                  href="https://resl.csie.nptu.edu.tw/virtualbike/"
+                  target="_blank"
+                >
+                  VirtualBike 官網
+                </a>
+                <a
+                  class="dropdown-item text-end"
+                  href="https://junwu.nptu.edu.tw/"
+                  target="_blank"
+                >
+                  Jun Wu 個人網站
+                </a>
+                <a
+                  class="dropdown-item text-end"
+                  href="https://smartexam.csie.nptu.edu.tw/"
+                  target="_blank"
+                >
+                  SmartExam
+                </a>
+                <a
+                  class="dropdown-item text-end"
+                  href="https://resl.csie.nptu.edu.tw/dokuwiki/doku.php"
+                  target="_blank"
+                >
+                  MCRTsim
+                </a>
+                <a
+                  class="dropdown-item text-end"
+                  href="https://resl.csie.nptu.edu.tw/dokuwiki/doku.php?id=rtcsa2018"
+                  target="_blank"
+                >
+                  多核心即時系統模擬架構
+                </a>
+                <a
+                  class="dropdown-item text-end"
+                  href="https://resl.csie.nptu.edu.tw/joomla3/index.php/announcement/50-comityrt"
+                  target="_blank"
+                >
+                  ComityRT
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer>
