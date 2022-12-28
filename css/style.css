@@ -7,9 +7,11 @@ body {
   font-family: "Open Sans", var(--bs-body-font-family), sans-serif;
 }
 
-/* 設定section的高度 */
 .page-section {
-  min-height: calc(100vh - 72px);
+  /* 設定section的高度 */
+  min-height: 100vh;
+  /* 使用錨點功能時section的內容不會被擋到 */
+  padding-top: 72px;
 }
 
 /* offcanvas 選單內容動畫 */
