@@ -10,18 +10,20 @@
     />
     <!-- Website icon. Ln: 12 -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap CSS v5.2.1. Ln: [14, 19] -->
+    <!-- AOS CSS v2.3.1. Ln: 14 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap CSS v5.2.1. Ln: [15, 21] -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <!-- Personalized CSS. Ln: 21 -->
+    <!-- Personalized CSS. Ln: 23 -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <!-- 為navbar加上scrollspy. Ln: 25 -->
+  <!-- 為navbar加上scrollspy. Ln: 27 -->
   <body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
       <!-- add navbar. Ln: [28, 57] -->
@@ -188,13 +190,20 @@
         "
       >
         <!-- resl logo (image). Ln: 187 -->
-        <img src="image/resl_logo.png" alt="resl logo" style="width: 250px" />
+        <img
+          src="image/resl_logo.png"
+          alt="resl logo"
+          style="width: 250px"
+          data-aos="fade-up"
+        />
         <!-- resl chinese name (image), vw <= md 時隱藏. Ln: [189, 194] -->
         <img
           src="image/resl_ch_name.png"
           alt="resl logo"
           class="d-none d-md-block"
           style="width: 70vw"
+          data-aos="fade-up"
+          data-aos-delay="600"
         />
         <!-- resl english name. Ln: [196, 204] -->
         <p
@@ -203,6 +212,8 @@
             font-family: 'Times New Roman', Times, var(--bs-body-font-family),
               serif;
           "
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
           Real-Time & Embedded Systems Laboratory, National Pingtung University
         </p>
@@ -212,6 +223,8 @@
           type="button"
           class="btn btn-primary rounded-pill"
           role="button"
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
           About RESL / 關於實驗室
         </a>
@@ -236,7 +249,7 @@
       <!-- about section. Ln: [233, 265] -->
       <section id="about" class="page-section pb-5 container">
         <!-- 標題. Ln: [235, 240] -->
-        <div class="text-center py-5">
+        <div class="text-center py-5" data-aos="fade-down" data-aos-delay="300">
           <h1 class="fw-normal">About RESL / 關於實驗室</h1>
           <h3 class="fw-normal">
             歡迎來到 國立屏東大學「即時與嵌入式系統實驗室」!
@@ -244,7 +257,7 @@
         </div>
         <div class="row">
           <!-- 實驗室示意圖. Ln: [244, 248] -->
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="450">
             <img
               src="image/lab_diagram.jpeg"
               alt="lab diagram"
@@ -253,7 +266,7 @@
           </div>
           <!-- 實驗室簡介. Ln: [252, 263] -->
           <!-- 快速移動到footer的連結. Ln: [258, 262] -->
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="flip-right" data-aos-delay="750">
             <p class="lh-base fs-5">
               本實驗室成立於2007年5月，以「即時系統(Real-Time
               Systems)」相關之技術與學理為基礎，針對廣受注目的「嵌入式系統(Embedded
@@ -525,5 +538,10 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS JavaScript Library. Ln: [532] -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
   </body>
 </html>
