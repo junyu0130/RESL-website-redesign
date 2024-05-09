@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
   <head>
-    <title>RESL@NPTU</title>
+    <title>RESL@NPTU Redesign</title>
     <!-- Required meta tags. Ln: [6, 10] -->
     <meta charset="utf-8" />
     <meta
@@ -25,6 +25,7 @@
 
   <!-- 為navbar加上scrollspy. Ln: 27 -->
   <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <header>
       <!-- add navbar. Ln: [30, 34] -->
       <nav
@@ -472,7 +473,7 @@
             >
               <div class="fs-5">RESL@NPTU</div>
               <div style="font-size: 0.875em">
-                © 2022 RESL即時與嵌入式系統實驗室
+                &copy; 2022 RESL即時與嵌入式系統實驗室
               </div>
             </div>
           </div>
@@ -519,8 +520,8 @@
               style="min-height: 175px"
             >
               <div class="fs-4">設計</div>
-              <div class="fs-5">資工四甲 CBB108015</div>
-              <div class="fs-5">廖鈞榆 ( Jun-Yu Liao )</div>
+              <div class="fs-5"></div>
+              <div class="fs-5">Jun-Yu Liao</div>
             </div>
           </div>
         </div>
@@ -538,10 +539,47 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <!-- AOS JavaScript Library. Ln: [542, 545] -->
+    <!-- AOS JavaScript Library. Ln: [542, 543], [575, 582] -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({ duration: 1000 });
+      /**
+       * Checks if the current page is accessed from a local host or
+       * a local machine, and prompts the user to confirm whether to
+       * access the page or redirect to the official website.
+       */
+      const referrer = document.referrer;
+      console.log("referrer: " + referrer);
+      const hostname = referrer ? new URL(referrer).hostname : "";
+      console.log("hostname: " + hostname);
+      const isLocalhost =
+        hostname === "127.0.0.1" ||
+        hostname === "localhost" ||
+        hostname === "junyu0130.github.io";
+      if (
+        // If the page is not accessed from a local host or a local machine,
+        // ask the user to confirm whether to access the page.
+        !isLocalhost &&
+        // Prompt the user to confirm.
+        !confirm(
+          "本網站為基於RESL@NPTU的官網重新設計的練習網站，並不是該單位的官方網站。請確定是否要進入本網頁?"
+        )
+      ) {
+        // If the user declines to access the page, redirect to the official
+        // website.
+        alert("將重新導向至官網頁");
+        window.location.href =
+          "https://resl.csie.nptu.edu.tw/joomla3/index.php";
+      }
+
+      // AOS
+      window.addEventListener("load", () => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
+      });
     </script>
   </body>
 </html>
