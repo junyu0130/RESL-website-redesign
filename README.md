@@ -12,4 +12,4 @@ Redesign the RESL@NPTU website using Bootstrap5 for classroom practice only.
 
 - 本專案的[參考來源網站](https://resl.csie.nptu.edu.tw/joomla3/index.php)
 
-[DesignIdea(Chinese)](DesignIdea.md)
+[Design Idea File](DesignIdea.md) (Chinese)
